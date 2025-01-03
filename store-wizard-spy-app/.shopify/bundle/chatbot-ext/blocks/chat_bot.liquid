@@ -1,0 +1,28 @@
+<div class="chat-bot-container" style="display: none;">
+  <div class="chat-box"></div>
+  <div class="message-input">
+    <input type="text" id="chat-message" placeholder="Type your message..." />
+    <button id="send-button">Send</button>
+  </div>
+</div>
+
+<!-- Icon to toggle ChatBot -->
+<img 
+  src="{{ 'success.png' | asset_img_url: '15x' }}" 
+  height="55" 
+  width="55" 
+  loading="lazy" 
+  id="chat-toggle" 
+  style="cursor: pointer;"
+  alt="ChatBot Icon"
+/>
+
+{% schema %}
+{
+  "name": "ChatBot",
+  "target": "body",
+  "stylesheet": "chat-bot.css",
+  "javascript": "chat-bot.js",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "7e7b1a85e9a51d199fd355e40b4fa943"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+name = "store-wizard-spy-app"
+handle = "store-wizard-spy-app"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[pos]
+embedded = false
+
+[build]
+include_config_on_deploy = true
+dev_store_url = "store-wizard-test.myshopify.com"
