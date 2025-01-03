@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e36615ff7aa2c55eb0034c07fd277b7e"
+application_url = "https://borough-gas-com-eds.trycloudflare.com"
+embedded = true
+name = "store-wizard-spy-app"
+handle = "store-wizard-spy-app-1"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://borough-gas-com-eds.trycloudflare.com/auth/callback",
+  "https://borough-gas-com-eds.trycloudflare.com/auth/shopify/callback",
+  "https://borough-gas-com-eds.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "store-wizard-test.myshopify.com"
+automatically_update_urls_on_dev = true
